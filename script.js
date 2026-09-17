@@ -43,3 +43,17 @@ if ('IntersectionObserver' in window) {
 
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
+
+// Marka adını tüm görünür metinlerde doğru Türkçe karakterlerle göster.
+document.title = document.title.replaceAll('Isik Labs', 'Işık Labs');
+document.querySelectorAll('meta[name="description"], meta[property="og:title"], meta[property="og:description"]').forEach((meta) => {
+  if (meta.content) meta.content = meta.content.replaceAll('Isik Labs', 'Işık Labs');
+});
+const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+const textNodes = [];
+while (walker.nextNode()) textNodes.push(walker.currentNode);
+textNodes.forEach((node) => {
+  if (node.nodeValue && node.nodeValue.includes('Isik Labs')) {
+    node.nodeValue = node.nodeValue.replaceAll('Isik Labs', 'Işık Labs');
+  }
+});
