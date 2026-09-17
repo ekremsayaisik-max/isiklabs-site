@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title"><title id="title">Işık Labs</title><defs><linearGradient id="g1" x1="10" y1="10" x2="54" y2="54" gradientUnits="userSpaceOnUse"><stop stop-color="#1239d6"/><stop offset=".55" stop-color="#0d6efd"/><stop offset="1" stop-color="#18d5e9"/></linearGradient><linearGradient id="g2" x1="54" y1="10" x2="10" y2="54" gradientUnits="userSpaceOnUse"><stop stop-color="#1ad6e9"/><stop offset=".55" stop-color="#0d6efd"/><stop offset="1" stop-color="#1739d6"/></linearGradient><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#0d6efd" flood-opacity=".25"/></filter></defs><g filter="url(#s)"><path d="M31 6 51 17.6c3.1 1.8 5 5.1 5 8.7v12.2c0 3.6-1.9 6.9-5 8.7L31 58l-8-13.7 18.5-10.7c1.3-.7 2.1-2.1 2.1-3.6 0-1.5-.8-2.9-2.1-3.6L23 15.7 31 6Z" fill="url(#g1)"/><path d="M33 58 13 46.4c-3.1-1.8-5-5.1-5-8.7V25.5c0-3.6 1.9-6.9 5-8.7L33 6l8 13.7-18.5 10.7c-1.3.7-2.1 2.1-2.1 3.6 0 1.5.8 2.9 2.1 3.6L41 48.3 33 58Z" fill="url(#g2)"/><path d="M32 21.5c1.1 5.2 5.2 9.3 10.4 10.4C37.2 33 33.1 37.1 32 42.3c-1.1-5.2-5.2-9.3-10.4-10.4C26.8 30.8 30.9 26.7 32 21.5Z" fill="#16d7ef"/><circle cx="32" cy="31.9" r="2.2" fill="#fff"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Işık Labs amblemi</title>
+  <desc id="logo-desc">Açık geometrik bir halkanın merkezinden yayılan ışık parıltısı.</desc>
+  <defs>
+    <linearGradient id="halo" x1="9" y1="9" x2="56" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="0.52" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <radialGradient id="flare" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32 32) rotate(90) scale(20)">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.22" stop-color="#FEF3C7"/>
+      <stop offset="0.58" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="25" fill="none" stroke="url(#halo)" stroke-width="5" stroke-linecap="round" pathLength="100" stroke-dasharray="86 14" transform="rotate(-36 32 32)"/>
+  <path d="M32 12C33.6 23.2 40.8 30.4 52 32C40.8 33.6 33.6 40.8 32 52C30.4 40.8 23.2 33.6 12 32C23.2 30.4 30.4 23.2 32 12Z" fill="url(#flare)"/>
+  <circle cx="32" cy="32" r="2.75" fill="#FFFDF4"/>
+</svg>

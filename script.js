@@ -43,27 +43,3 @@ if ('IntersectionObserver' in window) {
 
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
-
-// Marka adını tüm görünür metinlerde doğru Türkçe karakterlerle göster.
-document.title = document.title.replaceAll('Isik Labs', 'Işık Labs');
-document.querySelectorAll('meta[name="description"], meta[property="og:title"], meta[property="og:description"]').forEach((meta) => {
-  if (meta.content) meta.content = meta.content.replaceAll('Isik Labs', 'Işık Labs');
-});
-const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-const textNodes = [];
-while (walker.nextNode()) textNodes.push(walker.currentNode);
-textNodes.forEach((node) => {
-  if (node.nodeValue && node.nodeValue.includes('Isik Labs')) {
-    node.nodeValue = node.nodeValue.replaceAll('Isik Labs', 'Işık Labs');
-  }
-});
-
-// Işık Labs logo yazısını simgedeki renklerle uyumlu, canlı bir geçişle göster.
-document.querySelectorAll('.brand > span').forEach((wordmark) => {
-  wordmark.style.background = 'linear-gradient(90deg, #1648d8 0%, #2563eb 35%, #6d4cff 67%, #08b9d6 100%)';
-  wordmark.style.webkitBackgroundClip = 'text';
-  wordmark.style.backgroundClip = 'text';
-  wordmark.style.webkitTextFillColor = 'transparent';
-  wordmark.style.color = 'transparent';
-  wordmark.style.fontWeight = '900';
-});

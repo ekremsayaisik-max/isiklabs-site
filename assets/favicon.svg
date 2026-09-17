@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="favicon-title">
+  <title id="favicon-title">Işık Labs</title>
+  <defs>
+    <linearGradient id="tile" x1="6" y1="5" x2="59" y2="61" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="halo" x1="11" y1="10" x2="54" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="0.52" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="flare" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32 32) rotate(90) scale(17)">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.25" stop-color="#FEF3C7"/>
+      <stop offset="0.62" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#tile)"/>
+  <circle cx="32" cy="32" r="21" fill="none" stroke="url(#halo)" stroke-width="4.5" stroke-linecap="round" pathLength="100" stroke-dasharray="86 14" transform="rotate(-36 32 32)"/>
+  <path d="M32 15C33.4 24.5 39.5 30.6 49 32C39.5 33.4 33.4 39.5 32 49C30.6 39.5 24.5 33.4 15 32C24.5 30.6 30.6 24.5 32 15Z" fill="url(#flare)"/>
+  <circle cx="32" cy="32" r="2.5" fill="#FFFDF4"/>
+</svg>
