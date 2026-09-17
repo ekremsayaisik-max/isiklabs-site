@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://isiklabs.com/sitemap.xml
